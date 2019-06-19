@@ -21,17 +21,31 @@ jQuery(document).ready(function($) {
 
 const url='https://api.github.com/users/EndriulisBeatz/repos';
 
-$('#github').ready(function(){
+$('#gitrepos').ready(function(){
     console.log('test')
     $.get(url, function(data, status){
         console.log('data')
         for (var i =data.length - 1; i >= 0; i--) {
            
-        
-        $('#github').append('<p> '+ data[i].url+' </p>' );
+        var card = `<div>
+                                <div class="card" style="width: 20rem;">
+                                    <div id="github">
+                                    <div class="card-body">
+                                    <h5 class="card-title">`+data[i].name+`</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted"></h6>
+                                    <p class="card-text">`+ data[i].description+`</p>
+                                    <a href="`+ data[i].url+`" class="card-link">Repo Link</a>
+                                     
+                                    </div>
+                                    </div>`
+        $('#gitrepos').append(card);
+
+       
+
         console.log('test log')}
     });
 })
+
 
 
     
