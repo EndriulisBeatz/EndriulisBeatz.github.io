@@ -27,8 +27,8 @@ $('#gitrepos').ready(function(){
         console.log('data')
         for (var i =data.length - 1; i >= 0; i--) {
            
-        var card = `<div>
-                                <div class="card" style="width: 20rem;">
+        var card = `
+                                <div class="card col-sm-6" style="width: 20rem;">
                                     <div id="github">
                                     <div class="card-body">
                                     <h5 class="card-title">`+data[i].name+`</h5>
@@ -37,7 +37,7 @@ $('#gitrepos').ready(function(){
                                     <a href="`+ data[i].url+`" class="card-link">Repo Link</a>
                                      
                                     </div>
-                                    </div>`
+                                    `
         $('#gitrepos').append(card);
 
        
