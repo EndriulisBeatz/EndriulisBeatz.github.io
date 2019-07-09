@@ -1,15 +1,15 @@
 const url='https://api.github.com/users/EndriulisBeatz/repos';
 
 jQuery(document).ready(function($) {
-    console.log('document ready')
+    
 
     /*======= Skillset *=======*/
      $('.level-bar-inner').css('width', '0');
 
     $(function() {
-            console.log('first log')
+            
         $('.level-bar-inner').each(function() {
-            console.log('second log')
+            
             var itemWidth = $(this).data('level');
             
             $(this).animate({
@@ -24,13 +24,13 @@ jQuery(document).ready(function($) {
 
 
 $('#gitrepos').ready(function(){
-    console.log('test')
+    
     $.get(url, function(data, status){
-        console.log('data')
+       
         for (var i =data.length - 1; i >= 0; i--) {
            
         var card = `
-                                <div class="card col-6" >
+                                <div class="card col s12" style="min-width: 18rem;">
                                     <div id="github">
                                     <div class="card-body">
                                     <h5 class="card-title">`+data[i].name+`</h5>
@@ -44,7 +44,7 @@ $('#gitrepos').ready(function(){
 
        
 
-        console.log('test log')}
+        }
     });
 })
 
