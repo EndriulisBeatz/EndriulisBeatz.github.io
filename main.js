@@ -30,7 +30,7 @@ $('#gitrepos').ready(function(){
         for (var i =data.length - 1; i >= 0; i--) {
            
         var card = `
-                                <div class="card col s12" style="min-width: 18rem;">
+                                <div class="col-sm-6">
                                     <div id="github">
                                     <div class="card-body">
                                     <h5 class="card-title">`+data[i].name+`</h5>
