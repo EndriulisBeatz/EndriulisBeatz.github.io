@@ -7,9 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bootstrap 4 Portfolio/Resume Theme for Developers">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-     
+    
     
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
@@ -18,16 +16,13 @@
     <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
     
     <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/bootstrap.min.css">   
+    <link rel="stylesheet" href="/assets/bootstrap.min.css">   
     
-    <!--  github calendar css -->
-    <!-- <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css"> -->
-    <!-- github acitivity css -->    
-    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css"> -->
-    <!-- <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css"> --> 
+    <!-- Load the JS file -->
+  <script src="https://cdn.jsdelivr.net/npm/@gitgraph/js"></script>
     
     <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="css/styles.css">
+    <link id="theme-style" rel="stylesheet" href="/css/styles.css">
     <link rel="shortcut icon" type="image/png" href="favicon-16x16.png">
 </head> 
 
@@ -38,7 +33,7 @@
             <img class="profile-image img-fluid float-left" src="profile.png" alt="Edgar Endriulis" />
             <div class="profile-content float-left">
                 <h1 class="name">Edgar Endriulis</h1>
-                <h2 class="desc">Aspiring Web App Developer</h2>   
+                <h2 class="desc">Aspiring Web App Developer and Music producer.</h2>   
                 
                 <ul class="social list-inline">
                     <li class="list-inline-item"><a href="https://www.linkedin.com/in/edgar-endriulis-a575a5177/"><i class="fab fa-linkedin-in"></i></a></li>
@@ -59,20 +54,25 @@
                         <div class="content">
                             <p>Hello, I am Edgar an aspiring Web Developer. My journey into the world of web development began with attending <a href="https://www.meetup.com/Birmingham-Open-Code/"> Open Code <a/> They have a new barebones site  <a href="https://opencodeclub.github.io/"> Open code</a> . I attent sessions on tuesday's, matt the host of the meetup introduced me to 
                             online courses on <a href="https://www.freecodecamp.org">
-                            freecodecamp.org.<a/> This was my first exposure into learning about coding. After a few months of part-time learning I was introduced to Co-learning at <a href="https://www.meetup.com/Birmingham-Web-Development/events/wmvfxqyzhblb/"> Coderbunker</a> The sessions are on wednsdays (bi-weekly) at the Melting Pot in Digbeth. Outside of me pursuing a web development career I also make instumental music which ranges from Hip-Hop, R&B , Trap, Bass and many more <a href="https://endriulisbeatz.com/">Endriulisbeatz</a>. This page was my first attempt at making a web page that documents my path in coding.    
+                            freecodecamp.org.<a/> This was my first exposure into learning about coding. After a few months of part-time learning I was introduced to Co-learning at <a href="https://www.meetup.com/Birmingham-Web-Development/events/wmvfxqyzhblb/"> Coderbunker</a> The sessions are on wednsdays (bi-weekly) at the Melting Pot in Digbeth. Outside of me pursuing a web development career I also make instumental music which ranges from Hip-Hop, R&B , Trap, Bass and many more <a href="https://endriulisbeatz.com/">Endriulisbeatz</a>. This page was my first attempt at making a web page that documents my path in coding.</p> <div>
+                                
+                            </div>
+                            Open Code is also where I was introduced to  <a href="https://www.meetup.com/Birmingham-Web-Development/events/wmvfxqyzhblb/"> Coderbunker</a>, they host Co-learning meet ups on wednsdays (bi-weekly) along with monthly talks.   
                               </p>
                          
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
-    
+                
+
+
                <section class="latest section">
                     <div class="section-inner">
-                        <h2 class="heading">Latest News</h2>
+                        <h2 class="heading">Projects</h2>
                         <div class="content">    
                                                
                             <div class="item featured text-center">
-                                <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/product/appify-bootstrap-4-admin-template-for-app-developers/" target="_blank">Learning coding</a></h3>
+                                <h3 class="title">Learning<a href="https://themes.3rdwavemedia.com/bootstrap-templates/product/appify-bootstrap-4-admin-template-for-app-developers/" target="_blank"></a></h3>
                                 
                                 <div class="featured-image has-ribbon">
                                     <a href="https://themes.3rdwavemedia.com/bootstrap-templates/product/appify-bootstrap-4-admin-template-for-app-developers/" target="_blank">
@@ -80,11 +80,23 @@
                                     
                                 </div>
                                     
-                                <div class="desc text-left">                                    
-                                    <p>At this time, I do not have any active projects. Watch this space...</p>
+                                <div class="desc text-left">                   <br></br>     
+                                    <p>I am attempting to link my Githubpages page with Jquery to my Repos </p>
                                     <br></br>
+
+                                </div>
+
+
+
+                                    <br></br>
+                                    <div class="container-fluid">
+                                    <div class="card">
+                                    <div id="gitrepos" class="row"></div>
+                                         
+                                    </div>
                                 </div><!--//desc-->         
-                                              
+                                 
+
                             
                 
                 <section class="experience section">
@@ -113,6 +125,11 @@
                         <h2 class="heading sr-only">Basic Information</h2>
                         <div class="content">
                             <ul class="list-unstyled">
+                                <div class="container-fluid">
+                                    <div class="map-responsive">
+                                        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Birmingham+UK" width="300" height="200" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                                    </div>
+                                </div>
                                 <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span> Birmingham, UK</li>
                                 <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">edgarendriulis@gmail.com</a></li>
                                 <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="https://www.Endriulisbeatz.com">https://www.Endriulisbeatz.com</a></li>
@@ -131,15 +148,24 @@
                             <div class="skillset">
                                
                                 <div class="item">
-                                    <h3 class="level-title">HTML <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Begginer</span></h3>
+                                    <h3 class="level-title">HTML <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="I have a basic understanding. Still learning more every day"><i class="fas fa-info-circle"></i>Begginer</span></h3>
                                     <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="45%">
+                                        <div class="level-bar-inner" data-level="55%">
                                         </div>                                      
                                     </div><!--//level-bar-->                                 
                                 </div><!--//item-->
-                                
+
                                 <div class="item">
-                                    <h3 class="level-title">Javascript <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Beginner</span></h3>
+                                    <h3 class="level-title">CSS <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="I have a basic understanding. Still learning more."><i class="fas fa-info-circle"></i>Begginer</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="40%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->
+
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Javascript <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="I am an absolute beginner to this language."><i class="fas fa-info-circle"></i>Beginner</span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="20%">
                                         </div>                                      
@@ -147,11 +173,14 @@
                                 </div><!--//item-->
 
                                 <div class="item">
-                                    <h3 class="level-title">CSS <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Begginer</span></h3>
+                                    <h3 class="level-title">SQL <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="An absolute entry level beginner"><i class="fas fa-info-circle"></i>Beginner</span></h3>
                                     <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="35%">
+                                        <div class="level-bar-inner" data-level="15%">
                                         </div>                                      
-                                    </div><!--//level-bar-->
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+
+                                
                              <aside class="languages aside section">
                     <div class="section-inner">
                         <h2 class="heading">Languages</h2>
@@ -161,9 +190,15 @@
                                     <span class="title"><strong>English:</strong></span>
                                     <span class="level">Native Speaker <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
                                 </li><!--//item-->
+                                
                                 <li class="item">
                                     <span class="title"><strong>Russian:</strong></span>
-                                    <span class="level">Semi Native <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i></span>
+                                    <span class="level">Semi Native <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></span>
+                                </li><!--//item-->
+
+                                <li class="item">
+                                    <span class="title"><strong>Lithuanian:</strong></span>
+                                    <span class="level">Basic speech <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i>  </span>
                                 </li><!--//item-->
                             </ul>
                                 
@@ -204,9 +239,9 @@
     </footer><!--//footer-->
  
     <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script> 
+    <!--<script type="text/javascript" src="bootstrap.min.js"></script>    
     <!-- <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>  -->
     <!-- github calendar plugin -->
     <!-- <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script> -->
@@ -214,7 +249,7 @@
     <!--<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
     <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
     <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
+    <script type="text/javascript" src="js/main.js"></script>            
 </body>
 </html> 
 
